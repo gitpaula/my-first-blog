@@ -25,10 +25,15 @@ SECRET_KEY = '%w+mo*$$onpy@-9fzm(eu9j@ll7g=obef+jls7$z%o%q5sl%*1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'munekapythonblogi.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1','munekapythonblogi.pythonanywhere.com']
 
+
+# redirects to home when login accessed directly
+
+LOGIN_REDIRECT_URL = '/'
 
 # Application definition
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog'  
+    'blog'
 ]
 
 MIDDLEWARE = [
